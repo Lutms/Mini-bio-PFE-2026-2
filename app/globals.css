@@ -1,0 +1,64 @@
+:root {
+  --bg: #121210;
+  --bg-soft: #181815;
+  --paper: #1c1c19;
+  --ink: #ece8e0;
+  --muted: #938d81;
+  --accent: #ff2d3f;
+  --accent-dim: #6e1620;
+  --accent-glow: rgba(255, 45, 63, 0.25);
+  --line: #3c3a34;
+  --line-soft: #29281f;
+
+  --font-display: "Bebas Neue", "Arial Narrow", sans-serif;
+  --font-mono: "IBM Plex Mono", "Courier New", monospace;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-mono);
+  -webkit-font-smoothing: antialiased;
+  min-height: 100vh;
+  background-image:
+    radial-gradient(circle at 1px 1px, rgba(236, 232, 224, 0.05) 1px, transparent 0);
+  background-size: 22px 22px;
+}
+
+a {
+  color: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+::selection {
+  background: var(--accent);
+  color: #111;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
