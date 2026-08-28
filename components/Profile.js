@@ -13,7 +13,7 @@ export default function Profile() {
         photoSrc="/profile.jpg"
         photoAlt="minha foto de perfil"
         name="Lucas Tenório Moreira Silva"
-        phrase="Pensar fora da caixa cria algo novo, algo novo é desruptivo, algo disruptivo não é detectado, segurança é sobre detectar o que, até então, não é detectável. -Lucas Tenório"
+        phrase="Penso, construo, desenvolvo, programo, edito, ensino e nas horas vagas, se é que existem, jogo alguma coisa."
       />
     </main>
   );
